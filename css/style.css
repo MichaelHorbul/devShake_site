@@ -97,11 +97,26 @@ a {
   width: 13vw;
   height: 8vh;
   color: white;
-  background-color: #6088e1;
+  background-color: rgba(59, 82, 167, 0);
+  padding: 15px;
   opacity: 0.55;
   font-size: var(--index);
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+.home-screan .content button::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.2vh;
+  background-color: #6088e1;
+}
+.home-screan .content button:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.2vh;
+  background-color: #6088e1;
 }
 .home-screan .content button:hover {
   opacity: 1;

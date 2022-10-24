@@ -63,10 +63,25 @@
             width: 13vw;
             height: 8vh;
             color: white;
-            background-color: #6088e1;
+            background-color: rgba(59, 82, 167, 0);
+            padding: 15px;
             opacity: 0.55;
             font-size: var(--index);
             transition: 0.2s;
+            &::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 0.2vh;
+                background-color: #6088e1;
+            }
+            &:after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 0.2vh;
+                background-color: #6088e1;
+            }
         }
         button:hover {
             opacity: 1;

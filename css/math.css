@@ -1,6 +1,6 @@
 :root {
     --index: calc(1vw + 1vh);
-    --devShakeImgSize: 10;
+    --devShakeImgSize: 12;
 }
 
 .home-screan .img-layer.heght-leyer {
@@ -18,4 +18,11 @@
 .home-screan .img-layer>img {
     width: calc(var(--index)*var(--devShakeImgSize));
     height: calc(var(--index)*var(--devShakeImgSize)*1.8);
+}
+
+.home-screan .img-layer.midle-leyer>.circle {
+    position: relative;
+    left: calc(var(--index)*(37));
+    top: calc(var(--index)*(-10));
+    transform: translate3d(calc(var(--mousePositionX)/(-3)), calc(var(--mousePositionY)/(-3)), 0);
 }

@@ -13,7 +13,7 @@ a {
 .home-screan {
   background-position: center;
   background-size: cover;
-  min-height: 100vh;
+  max-height: 100vh;
   position: relative;
 }
 .home-screan .img-layer {
@@ -24,6 +24,17 @@ a {
 }
 .home-screan .midle-leyer {
   z-index: 1;
+  overflow: hidden;
+  position: relative;
+  max-height: 100vh;
+}
+.home-screan .midle-leyer .circle {
+  width: 100vw;
+  height: 150vh;
+  border-radius: 100%;
+  opacity: 0.23;
+  background: radial-gradient(100% 100% at 50% 50%, rgb(96, 136, 225) 0%, rgb(59, 82, 167) 100%);
+  background-blend-mode: normal;
 }
 .home-screan .bottom-leyer {
   z-index: 0;

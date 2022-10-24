@@ -1,0 +1,19 @@
+@import 'default.scss';
+.home-screan {
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    .img-layer {
+        position: absolute;
+    }
+    .heght-leyer {
+        z-index: 2;
+    }
+    .midle-leyer {
+        z-index: 1;
+    }
+    .bottom-leyer {
+        z-index: 0;
+    }
+}

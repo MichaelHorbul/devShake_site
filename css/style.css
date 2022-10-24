@@ -1,0 +1,30 @@
+body,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home-screan {
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+}
+.home-screan .img-layer {
+  position: absolute;
+}
+.home-screan .heght-leyer {
+  z-index: 2;
+}
+.home-screan .midle-leyer {
+  z-index: 1;
+}
+.home-screan .bottom-leyer {
+  z-index: 0;
+}

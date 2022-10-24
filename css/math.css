@@ -6,13 +6,15 @@
 .home-screan .img-layer.heght-leyer {
     right: calc(var(--index)*10);
     top: calc(var(--index)*7);
-    transform: translate3d(var(--mousePositionX), var(--mousePositionY), 0);
+    transform: translate3d(calc(var(--mousePositionX)*(-1)), calc(var(--mousePositionY)*(-1)), 0);
+    transition: 0.2s;
 }
 
 .home-screan .img-layer.bottom-leyer {
     right: calc(var(--index)*9.5);
     top: calc(var(--index)*7.5);
-    transform: translate3d(calc(var(--mousePositionX)/5*var(--devShakeImgSize)), calc(var(--mousePositionY)/5*var(--devShakeImgSize)), 0);
+    transform: translate3d(calc(var(--mousePositionX)/(-5)*var(--devShakeImgSize)), calc(var(--mousePositionY)/(-5)*var(--devShakeImgSize)), 0);
+    transition: 0.2s;
 }
 
 .home-screan .img-layer>img {
@@ -20,9 +22,9 @@
     height: calc(var(--index)*var(--devShakeImgSize)*1.8);
 }
 
-.home-screan .img-layer.midle-leyer>.circle {
-    position: relative;
-    left: calc(var(--index)*(37));
-    top: calc(var(--index)*(-10));
+.home-screan .img-layer.midle-leyer {
+    left: calc(var(--index)*(7));
+    top: calc(var(--index));
     transform: translate3d(calc(var(--mousePositionX)/(-3)), calc(var(--mousePositionY)/(-3)), 0);
+    transition: 0.2s;
 }

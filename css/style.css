@@ -19,7 +19,9 @@ a {
   position: absolute;
   color: white;
   z-index: 999;
-  margin: 15px;
+  padding-right: 20px;
+  width:15%;
+  right:0;
 }
 
 .home-screan {

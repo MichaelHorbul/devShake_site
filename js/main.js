@@ -32,5 +32,36 @@ function myFunction2() {
   }
   else{
   l.style.display = "block";
-  }
+}
 };
+
+/* Gallery */
+
+var t = document.getElementsByClassName("item");
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+var slideIndex = 1;
+showDivs(slideIndex)
+
+function showDivs(n) {
+  var i;
+  if (n > t.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = t.length}
+  
+  
+  function hide(){
+  for (i = 0; i < t.length; i++) {
+    
+    t[i].classList.add('hidden');
+    t[i].classList.add('visuallyhidden');
+  }
+}
+
+setTimeout(hide(),500);
+
+  t[slideIndex-1].style.opacity = 1; 
+  t[slideIndex-1].classList.remove('hidden');
+  setTimeout(function() { t[slideIndex-1].classList.remove('visuallyhidden'); }, 500);
+}

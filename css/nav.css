@@ -2,26 +2,53 @@
     overflow: hidden;
     background-color: transparent;
     position: relative;
-    right:0px;
-  }
-  
-  .topnav #Links1,#lang{
-    display: none;
-  }
-  #lang{
+    right: 0px;
+}
+
+/*
+.topnav #Links1,
+#lang {
+   display: none;
+}
+*/
+
+#lang {
     padding-right: 40px;
-  }
-  
-  .topnav a {
+}
+
+.topnav .top {
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+}
+
+.topnav a {
+    float: left;
     color: white;
     padding: 14px 16px;
     font-size: 14px;
     display: block;
-    right:10px;
-    text-align:right;
+    right: 10px;
+    text-align: right;
     text-decoration: none;
-  }
-  
+    transition: 0.2s;
+    /* всегда на анимации используй транзишн для смягчения. просто и приятно глазу*/
+}
+
+.top .logo {
+    font-size: 25px;
+}
+
+.topnav .links-container {
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+/*
   .topnav a.icon {
     background: transparent;
     display: block;
@@ -36,14 +63,31 @@
     right: 40px;
     top: 0;
   }
-  
-  .topnav a:hover {
+*/
+
+.topnav a:hover {
     background-color: transparent;
-    color: #03fce3;
+    color: #6088e1;
     text-decoration: none;
-  }
-  
-  .top {
-    height:40px;
-  }
-  
+}
+
+
+.topnav button {
+    color: white;
+    padding: 14px 16px;
+    font-size: 14px;
+    display: block;
+    right: 10px;
+    text-align: right;
+    text-decoration: none;
+    border: none;
+    background: transparent;
+    margin: 0;
+    transition: 0.2s;
+}
+
+.topnav button:hover {
+    background-color: transparent;
+    color: #6088e1;
+    text-decoration: none;
+}

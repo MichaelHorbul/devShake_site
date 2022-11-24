@@ -1,5 +1,5 @@
 window.addEventListener('mousemove', e => {
-    // console.log(e.clientX + " " + e.clientY)
+    console.log(e.clientX + " " + e.clientY)
     document.body.style.cssText += `--mousePositionX:${e.clientX/100}px; --mousePositionY:${e.clientY/100}px; `
 
 });
@@ -7,21 +7,22 @@ window.addEventListener('mousemove', e => {
 /* Nav */
 
 
-var x = document.getElementById("Links1"); //название переменных. сам таким грешу но всё же
+var x = document.getElementById("Links1");
 var l = document.getElementById("lang");
 
 function myFunction() {
-    if (x.style.display === "flex") {
-        x.style.display = "none";
-    } else if (l.style.display = "flex") {
-        l.style.display = "none";
-        x.style.display = "flex";
-    } else {
-        x.style.display = "flex";
-    }
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else if(l.style.display = "block"){
+	l.style.display = "none";
+    x.style.display = "block";
+  }
+  else{
+  x.style.display = "block";
+  }
 };
 
-
+  
 function myFunction2() {
   if (l.style.display === "block") {
     l.style.display = "none";
@@ -64,14 +65,3 @@ setTimeout(hide(),500);
   t[slideIndex-1].classList.remove('hidden');
   setTimeout(function() { t[slideIndex-1].classList.remove('visuallyhidden'); }, 500);
 }
-    if (l.style.display === "flex") {
-        l.style.display = "none";
-    } else if (x.style.display = "flex") {
-        x.style.display = "none";
-        l.style.display = "flex";
-    } else {
-        l.style.display = "flex";
-    }
-};
-
-

@@ -208,7 +208,19 @@ a {
   cursor: pointer;
   text-shadow: 0 0 20px #fff, 0 0 30px mediumspringgreen, 0 0 40px mediumspringgreen, 0 0 50px mediumspringgreen, 0 0 60px mediumspringgreen, 0 0 70px mediumspringgreen, 0 0 80px mediumspringgreen;
 }
-
+/*spesials for WO-carousel*/
+.WO-carousel .btnleft{
+     background-image: none !important;
+    height: 100vh !important;
+    
+}
+.WO-carousel .btnright{
+     background-image: none !important;
+    margin-left: 0;
+    height: 100vh !important;
+   
+}
+/*spesials for WO-carousel*/
 .btnleft{
   margin-left:12.75%;
 }

@@ -33,7 +33,7 @@ a {
   color: white;
   z-index: 999;
   padding-right: 20px;
-  width:15%;
+  width:100%;
   right:0;
   
 }
@@ -274,4 +274,8 @@ h1 {
   width: 100vw;
   z-index: 6;
   background-color: grey;
+}
+
+.snap{
+    scroll-snap-align: start;
 }

@@ -18,54 +18,68 @@
 </head>
 
 <body>
-<div id="top">
+    <div id="top">
 
 
-    <header class="main-header">
-        <!-- Navigation -->
-<div class="topnav">
-    <a href="#top" class="top"></a>
-    <div id="Links1">
-      <a href="#top">Main</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-    <div id="lang">
-      <a href="#eng">ENG</a>
-      <a href="#ukr">UKR</a>
-    </div>
-    <a href="javascript:void(0);" class="icon2" onclick="myFunction2()">
-      <i class="">Language</i>
-    </a>
-  </div>
-    </header>
-    <div class="home-screen snap"  style="background-image: url(img/background-main.png);">
-        <!-- Main content -->
-        <div class="content">
-            <div class="description">
-                <h1>devShake</h1>
-                <p><span>Lorem Ipsum</span> является текст-заполнитель обычно <span>используется в графических,</span> печать и издательской индустрии для <span>предварительного просмотра макета</span> и визуальных макетах.</p>
-            </div>
-            <a href="#projects">
-            <button>DOWWN</button></a>
-        </div>
+        <header class="main-header">
+            <!-- Navigation -->
+            <div class="topnav">
+                <div class="top">
+                    <!-- хранить стек элементов лучше в комплексе блока. Повышается читабельность // класс топ вообще ни о чём не говорит. переименуй его более подходяще исходя из его нового места жительства (раньше он был присвоен к ссылке лого) -->
+                    <a href="#top" class="logo">devShake</a> <!-- это походу кнопка логотипа, но она не на своём месте совсем.  -->
+                    <div style="display: flex; flex-wrap: nowrap;">
+                        <button onclick="myFunction2()">
+                            <i class="">Language</i>
+                        </button>
+                        <button onclick="myFunction()">
+                            <!--  <a href="javascript:void(0);" class="icon" onclick="myFunction()">  использование а хреф войд - юзлесс. хтмл придумал для этого кнопку -->
+                            <i class="fa fa-bars"></i>
+                        </button>
+
+                    </div>
+                </div>
+
+
+                <div id="Links1" class="links-container">
+                    <a href="#top">Main</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+
+                <div id="lang" class="links-container">
+                    <a href="#eng">ENG</a>
+                    <a href="#ukr">UKR</a>
+                </div>
 
         <div class="animete-img">
             <div class="img-layer heght-layer">
                 <img src="img/devShake.png" class="shake" alt="devShake">
             </div>
-            <div class="img-layer midle-layer">
-                <div class="circle"></div>
+        </header>
+        <div class="home-screen snap" style="background-image: url(img/background-main.png);">
+            <!-- Main content -->
+            <div class="content">
+                <div class="description">
+                    <h1>devShake</h1>
+                    <p><span>Lorem Ipsum</span> является текст-заполнитель обычно <span>используется в графических,</span> печать и издательской индустрии для <span>предварительного просмотра макета</span> и визуальных макетах.</p>
+                </div>
+                <a href="#projects">
+                    <button>DOWWN</button></a>
             </div>
-            <div class="img-layer bottom-layer">
-                <img src="img/devShakeShadow.png" alt="devShake">
+
+            <div class="animete-img">
+                <div class="img-layer heght-layer">
+                    <img src="img/devShake.png" alt="devShake">
+                </div>
+                <div class="img-layer midle-layer">
+                    <div class="circle"></div>
+                </div>
+                <div class="img-layer bottom-layer">
+                    <img src="img/devShakeShadow.png" alt="devShake">
+                </div>
             </div>
         </div>
-    </div>
-    <!-- Projects content -->
+        <!-- Projects content -->
         <div id="projects" class="proj snap">
             <div class="btnleft">
                 <div class="left" onclick="plusDivs(-1)"><</div>
@@ -95,12 +109,12 @@
                 <div class="right" onclick="plusDivs(1)">></div>
             </div>
         </div>
-    <!-- Contact content -->
+        <!-- Contact content -->
         <div id="contact" class="contact snap">
-            
+
         </div>
-    
-</div>
+
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 

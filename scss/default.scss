@@ -3,13 +3,19 @@
     src: url('./../fonts/10890.otf');
 }
 
+@font-face {
+    font-family: Anurati;
+    src: url('./../fonts/Anurati-Regular.otf');
+}
+
 body,
 ul,
 ol,
 li {
     margin: 0;
     padding: 0;
-    font-family: alien_f, sans-serif !important;
+    font-family: 'Inter', sans-serif !important;
+    //font-family: alien_f, sans-serif !important;
 }
 
 a {

@@ -1,0 +1,50 @@
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 99%;
+    min-height: 30px;
+    z-index: 999;
+    .burger-button {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        background: none;
+        border: none;
+        opacity: 0.3;
+        transition: 1.2s;
+        
+        div:nth-child(n) {
+            margin-top: 7px;
+            background: #305263;
+            height: 6px;
+            border-radius: 0px;
+            mix-blend-mode: overlay;
+            transform: matrix(1, 0, 0, -1, 0, 0);
+            
+        }
+
+        div:nth-child(1) {
+            width: 61px;
+        }
+
+        div:nth-child(2) {          
+            width: 41px;
+        }
+
+        div:nth-child(3) {
+            width: 61px;
+        }
+        
+        &:hover{
+            opacity: 0.6;
+            transform: scale(1.02);
+        }
+
+    }
+}

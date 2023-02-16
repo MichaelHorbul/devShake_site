@@ -1,0 +1,26 @@
+.main-botton {
+    box-sizing: border-box;
+    background: rgba(48, 82, 99, 0.5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    mix-blend-mode: overlay;
+    font-family: 'Anurati';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 62px;
+    border: 1px solid;
+    border-image-source: linear-gradient(149.91deg, rgba(57, 79, 90, 0.375) 18.38%, rgba(137, 194, 227, 0.375) 62.35%);
+    transition: 1.2s;
+
+    &:hover {
+        
+        background: #305263;
+        transform: scale(1.02);
+    }
+}

@@ -1,67 +1,31 @@
-//window.addEventListener('mousemove', e => {
-//    console.log(e.clientX + " " + e.clientY)
-//    document.body.style.cssText += `--mousePositionX:${e.clientX/100}px; --mousePositionY:${e.clientY/100}px; `
-//
-//});
-//
-///* Nav */
-//
-//
-//var x = document.getElementById("Links1");
-//var l = document.getElementById("lang");
-//
-//function myFunction() {
-//  if (x.style.display === "block") {
-//    x.style.display = "none";
-//  } else if(l.style.display = "block"){
-//	l.style.display = "none";
-//    x.style.display = "block";
-//  }
-//  else{
-//  x.style.display = "block";
-//  }
-//};
-//
-//  
-//function myFunction2() {
-//  if (l.style.display === "block") {
-//    l.style.display = "none";
-//  } else if(x.style.display = "block"){
-//	x.style.display = "none";
-//    l.style.display = "block";
-//  }
-//  else{
-//  l.style.display = "block";
-//}
-//};
-//
-///* Gallery */
-//
-//var t = document.getElementsByClassName("item");
-//
-//function plusDivs(n) {
-//  showDivs(slideIndex += n);
-//}
-//var slideIndex = 1;
-//showDivs(slideIndex)
-//
-//function showDivs(n) {
-//  var i;
-//  if (n > t.length) {slideIndex = 1}
-//  if (n < 1) {slideIndex = t.length}
-//  
-//  
-//  function hide(){
-//  for (i = 0; i < t.length; i++) {
-//    
-//    t[i].classList.add('hidden');
-//    t[i].classList.add('visuallyhidden');
-//  }
-//}
-//
-//setTimeout(hide(),500);
-//
-//  t[slideIndex-1].style.opacity = 1; 
-//  t[slideIndex-1].classList.remove('hidden');
-//  setTimeout(function() { t[slideIndex-1].classList.remove('visuallyhidden'); }, 500);
-//}
+function almightyLasor(){
+    setTimeout(laserFirin, 1000);
+    setTimeout(addDrinkAni, 1300);
+    setTimeout(laserFirin, 4000);
+}
+
+function laserFirin(){
+    var current = document.getElementsByClassName("active")[1];
+    var imafirinmahlasah = current.getElementsByClassName("laser")[0];
+    imafirinmahlasah.classList.toggle("laserfirin");
+}
+
+function addDrinkAni(){
+    var current = document.getElementsByClassName("active")[1];
+    var prev = document.getElementsByClassName("active")[1].previousElementSibling.getElementsByClassName("drink")[0];
+    var drink1 = current.getElementsByClassName("drink")[0];
+    prev.classList.remove("test");
+    prev.classList.remove("test2");
+    drink1.classList.add("test");
+    setTimeout(addDrinkAni2, 1000);
+}
+
+function addDrinkAni2(){
+    var current = document.getElementsByClassName("active")[1];
+    var drink2 = current.getElementsByClassName("drink2")[0];
+    drink2.classList.add("test2");
+}
+
+function funk() {
+    console.log('s');
+}

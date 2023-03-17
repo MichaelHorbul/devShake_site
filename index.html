@@ -14,6 +14,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <title>devShake_site</title>
 
     <script src="js/main.js" defer></script>
@@ -34,25 +38,134 @@
         <div class="title">
             <h1>DEVSHAKE</h1>
             <h2>your best choice in progressive world</h2>
-            <button class="main-botton">lern more</button>
+            <button href="#performance-page" class="main-botton">Learn more</button>
         </div>
 
 
 
     </section>
     <section id="performance-page">
-        
+      <!-- SMOKE MACHINE, BABY! -->
+      <div id="foglayer_01" class="fog">
+        <div class="image01"></div>
+        <div class="image02"></div>
+      </div>
+      <div id="foglayer_02" class="fog">
+        <div class="image01"></div>
+        <div class="image02"></div>
+      </div>
+      <div id="foglayer_03" class="fog">
+        <div class="image01"></div>
+        <div class="image02"></div>
+      </div>
+
+    <div id="ppage-content">
+        <h2>Lorem Ipsum</h2>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostr
+             ud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis au
+             te irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+             nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qu
+             i officia deserunt mollit anim id est laborum."
+        <p>
+          <br>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut</p>
+    </div>
+    <div id="ppage-disp">
+        <div id="demo" class="carousel slide" data-interval="false">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="laser"></div>
+                <img class="glass" src="img/prototype1.png" >
+                <img class="drink" src="img/prototype2.png" >
+                <img class="drink2" src="img/prototype2.5.png" >
+              </div>
+              <div class="carousel-item">
+                <div class="laser"></div>
+                <img class="glass" src="img/prototype1.png" >
+                <img class="drink" src="img/prototype2.png">
+                <img class="drink2" src="img/prototype2.5.png">
+              </div>
+              <div class="carousel-item">
+                <div class="laser"></div>
+                <img class="glass" src="img/prototype1.png">
+                <img class="drink" src="img/prototype2.png">
+                <img class="drink2" src="img/prototype2.5.png">
+              </div>
+            </div>
+            
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev" onclick="almightyLasor()">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next" onclick="almightyLasor()">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+    </div>
 
     </section>
 
-    <script>
-        function funk() {
-            console.log('s');
-        }
+    <section id="aboutus">
+    </section>
 
-    </script>
-    <script src="js/jquery/jquery-3.6.3.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <section id="projects">
+        <div class="projects-wrap">
+          <h1>Projects</h1>
+<!-- COLUMN 1 -->
+          <div class="pcolumn">
+              <div class="proj">
+                <img img src="img/home-background.png"/>
+                <h4>Project 1</h4>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing e
+                  incididunt ut labore et dolore magna aliqua. Ut eni
+                  ud exercitation ullamco laboris nisi ut aliquip </p>
+              </div>
+          </div>
+<!-- COLUMN 2 -->
+          <div class="pcolumn lower">
+              <div class="proj">
+                <img img src="img/home-background.png"/>
+                <h4>Project 2</h4>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing e
+                  incididunt ut labore et dolore magna aliqua. Ut eni
+                  ud exercitation ullamco laboris nisi ut aliquip</p>
+              </div>
+          </div>
+          
+<!-- COLUMN 3 -->
+          <div class="pcolumn">
+              <div class="proj">
+                <img img src="img/home-background.png"/>
+                <h4>Project 3</h4>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing e
+                  incididunt ut labore et dolore magna aliqua. Ut eni
+                  ud exercitation ullamco laboris nisi ut aliquip</p>
+              </div>
+          </div>
+<!-- COLUMN 4 -->
+          <div class="pcolumn lower">
+              <div class="proj">
+                <img img src="img/home-background.png"/>
+                <h4>Project 4</h4>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing e
+                  incididunt ut labore et dolore magna aliqua. Ut eni
+                  ud exercitation ullamco laboris nisi ut aliquip</p>
+              </div>
+          </div>
+
+    </section>
+     
 </body>
 
 </html>

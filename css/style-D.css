@@ -244,8 +244,6 @@ body {
       border-left: 30vh solid transparent;
       border-right: 30vh solid transparent;
       border-bottom: 10vw solid rgba(135, 255, 145, 0.6);
-    border-bottom-left-radius: 35% 5%;
-    border-bottom-right-radius: 35% 5%;
     position:absolute;
     top:0;
     -webkit-filter: drop-shadow(0px 0px 15px rgba(98, 255, 87, 0.9));
@@ -364,7 +362,6 @@ body {
     z-index: 10;
     touch-action: none;
     
-    border-radius: 5% / 3.5%;
     box-shadow: 
       -5px -5px 5px -5px var(--color1), 
       5px 5px 5px -5px var(--color2), 

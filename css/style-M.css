@@ -1,0 +1,182 @@
+@font-face {
+  font-family: alien_f;
+  src: url("./../fonts/10890.otf");
+}
+@font-face {
+  font-family: Anurati;
+  src: url("./../fonts/Anurati-Regular.otf");
+}
+body,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif !important;
+}
+
+
+section {
+  height: 100vh;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 99%;
+  min-height: 30px;
+  z-index: 999;
+}
+header .burger-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background: none;
+  border: none;
+  opacity: 0.3;
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+}
+header .burger-button div:nth-child(n) {
+  margin-top: 7px;
+  background: #305263;
+  height: 6px;
+  border-radius: 0px;
+  mix-blend-mode: overlay;
+  -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+          transform: matrix(1, 0, 0, -1, 0, 0);
+}
+header .burger-button div:nth-child(1) {
+  width: 61px;
+}
+header .burger-button div:nth-child(2) {
+  width: 41px;
+}
+header .burger-button div:nth-child(3) {
+  width: 61px;
+}
+header .burger-button:hover {
+  opacity: 0.6;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.main-botton {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: rgba(48, 82, 99, 0.5);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  mix-blend-mode: overlay;
+  font-family: "Anurati";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 62px;
+  border: 1px solid;
+  border-image-source: linear-gradient(149.91deg, rgba(57, 79, 90, 0.375) 18.38%, rgba(137, 194, 227, 0.375) 62.35%);
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+}
+.main-botton:hover {
+  background: #305263;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+#home-page {
+  min-height: 100vh;
+  position: relative;
+  background-image: url(../img/home-background.png);
+}
+
+
+
+.title {
+  min-height: 100vh;
+  min-width: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.title h1 {
+  font-family: "Anurati";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 216px;
+  line-height: 259px;
+  color: #FFFFFF;
+  mix-blend-mode: overlay;
+}
+.title h2 {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  mix-blend-mode: overlay;
+}
+
+#performance-page {
+  background-color: #162022;
+  min-height: 100vh;
+}
+
+.ufo {
+  background-image: url(../img/ufo-documentaries-0%201.png);
+  background-clip: content-box;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: -10%;
+  left: 25%;
+  width: 50%;
+  position: absolute;
+  height: 530px;
+  mix-blend-mode: soft-light;
+}

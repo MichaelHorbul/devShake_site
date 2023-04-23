@@ -26,6 +26,3 @@ function addDrinkAni2(){
     drink2.classList.add("test2");
 }
 
-function funk() {
-    console.log('s');
-}

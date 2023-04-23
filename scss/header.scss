@@ -1,6 +1,6 @@
 header {
     position: fixed;
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: flex-end;
     flex-wrap: nowrap;

@@ -1,44 +1,63 @@
-#aboutus{
+#aboutus {
     background-color: #162022;
-     position: relative;
-}
-.img-holder{
-    
-    img{
+    position: relative;
+
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .img-comp-container {
+        position: sticky;
+        top: 0;
         width: 100vw;
         height: 100vh;
-       object-fit: cover;
-        position: absolute;
-    }
-}
+        /*should be the same height as the images*/
 
-*{box-sizing: border-box;}
-.img-comp-container {
-    position: sticky;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-   /*should be the same height as the images*/
-}
-.img-comp-img {
-  position: absolute;
- 
-  overflow:hidden;
-}
-.img-comp-img img {
-  display:block;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-  vertical-align:middle;
-}
-.img-comp-slider {
-  position: absolute;
-  z-index:9;
-  /*set the appearance of the slider:*/
-  width: 550px;
-  height: 100vh;
-  background-color: #162022;
-  opacity: 0.7;
-  
+        .img-comp-img {
+            position: absolute;
+
+            overflow: hidden;
+
+            img {
+                display: block;
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+                vertical-align: middle;
+            }
+        }
+
+
+        .img-comp-slider {
+            position: absolute;
+            z-index: 9;
+            /*set the appearance of the slider:*/
+            width: 550px;
+            //height: 100vh;
+            overflow: hidden;
+            background-color: #162022;
+            opacity: 0.7;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            
+
+                > :nth-child(n) {
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    p{
+                        background: none;
+                    }
+                }
+            
+        }
+    }
+
+
 }

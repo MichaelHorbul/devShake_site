@@ -21,6 +21,7 @@ function initComparisons() {
         img.style.width = (w) + "px";
 
         slider = document.getElementById("slider");
+        slider.style.height = h + "px";
 
 
         var fixedBlock = document.getElementById("aboutus");
@@ -31,10 +32,11 @@ function initComparisons() {
             if (window.pageYOffset > initialPosition) {
 
                 slide(window.pageYOffset - initialPosition);
-
+                textAnimation(window.pageYOffset - initialPosition);
+                
                 if (window.pageYOffset > initialPosition + window.innerHeight) {
 
-                    slider.style.left = window.innerWidth - slider.offsetWidth  + "px";
+                    slider.style.left = window.innerWidth - slider.offsetWidth + "px";
                     img.style.width = window.innerWidth + "px";
                 }
             } else {
@@ -51,6 +53,14 @@ function initComparisons() {
                 img.style.width = x * (window.innerWidth / window.innerHeight) + "px";
                 /*position the slider:*/
                 slider.style.left = img.offsetWidth - (slider.offsetWidth * (x / window.innerHeight)) + "px";
+            }
+        }
+        function textAnimation(x){
+            
+            if (x < initialPosition - window.innerHeight) {
+                console.log(x)
+            document.getElementById("first-person").style.opacity = 1+(-2*x/(initialPosition - window.innerHeight));
+            document.getElementById("second-person").style.opacity = (-1)+(2*x/(initialPosition - window.innerHeight));
             }
         }
     }

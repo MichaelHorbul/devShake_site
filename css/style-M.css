@@ -130,6 +130,8 @@ header .burger-button:hover {
 }
 
 .img-comp-container {
+  position: sticky;
+  top: 0;
   width: 100vw;
   height: 100vh;
   /*should be the same height as the images*/

@@ -72,7 +72,7 @@ function closeP(){
       if(deselectedValue == 1)
       {
         pItems[i].classList.remove("pexp")
-        setTimeout(closeP2, 900);
+        setTimeout(closeP2, 750);
         document.getElementsByClassName("closebtn")[0].classList.remove("closebtnshow");
       }
     }
@@ -88,7 +88,7 @@ function closeP2(){
       }
       if(deselectedValue == 0)
       {
-        setTimeout(closeP3, 450);
+        setTimeout(closeP3, 480);
         setTimeout(closeP4, 500);
       }
     }

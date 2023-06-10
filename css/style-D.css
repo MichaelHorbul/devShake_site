@@ -214,14 +214,34 @@ body {
     background: #080808d3;
   }
 
-.pitem{
-  margin-top:20vh;
-  height:80vh;
-  background-image: url(../img/home-background.png);
+.pcontainer{
+  position: relative;
+  width:60vw;
+  margin:5vh 20vw 0vh 20vw;
 }
 
-.pitem img{
-  width:100%;
+.pitem{
+  filter: brightness(100%);
+  height:75vh;
+  width:14vw;
+  margin-left:0.5vw;
+  padding:1vh 1vw 1vh 1vw;
+  transition: 1s;
+  float:left;
+  position: absolute;
+  overflow:hidden;
+}
+
+
+.pitem h1{
+  position:absolute;
+  z-index: 5;
+  color:white;
+}
+
+.pitem h1{
+  position:absolute;
+  bottom:-10;
 }
 
 .pitem:hover{
@@ -230,7 +250,87 @@ body {
   cursor: pointer;
   }
 
+.p1{
+  left:0vw;
+}
+
+.i1{
+  top:0;
+  left:0;
+  width:auto;
+  height:100%;
+  position:absolute;
+  z-index: -1;
+}
+
+.p2{
+  left:15vw;
+}
+
+.p3{
+  left:30vw;
+}
+
+.p4{
+  left:45vw;
+}
+
+.psel{
+  left:0vw !important;
+}
+
+.pexp{
+  width:60vw !important;
+}
+
+.minimize{
+  scale:0.8;
+  filter: brightness(35%);
+  margin-left: auto;
+  margin-right: auto;
+  z-index:-3;
+}
+
+.dissapear{
+  display:none;
+}
+
 
   html,body,main {
     min-height: 100%;
   }
+
+  .blocked
+  {
+      position:relative;
+  }
+  .blocked:after
+  {
+      content: '';
+      position: absolute;
+      left:0;
+      right:0;
+      top:0;
+      bottom:0;
+      z-index:1;
+      background: transparent;
+      height:75vh;
+      width:60vw;
+  margin-left:0.5vw;
+  }
+
+.closebtn{
+  position: absolute;
+  top:10px;
+  right:10px;
+  width:50px;
+  cursor: pointer;
+  z-index:-2;
+  opacity:0;
+}
+
+.closebtnshow{
+  opacity:1 !important;
+  transition:1s;
+  z-index:2;
+}
